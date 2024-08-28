@@ -48,6 +48,7 @@ export class AuthController {
     @Request() req: RequestWithUser,
     @Res() res: Response,
   ) {
+    console.log('리프레시 요청');
     const refreshToken = req.user['refreshToken'];
 
     const accessToken =
